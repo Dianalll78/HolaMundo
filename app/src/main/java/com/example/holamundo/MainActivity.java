@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     /*Metodo para llamar la actividad producto, con este metodo me muevo a traves de todas las act*/
     public void goToActivityProducto(View view){
         Intent newIntent = new Intent(this,ProductoActivity.class); /*definicion de la intencion*/
-        newIntent.putExtra("msg","Hola");
-        newIntent.putExtra("year", 2021);
+        newIntent.putExtra("msg","Hola MinTic");
+        newIntent.putExtra("year", 2022);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); /*bandera para que destruya las otras act y ponga la que llamo arriba de la pila*/
         startActivity(newIntent); /*inicio de una nueva instancia de la activity principal pasando intent a startActivity*/
     }
