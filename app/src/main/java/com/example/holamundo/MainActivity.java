@@ -30,22 +30,22 @@ public class MainActivity extends AppCompatActivity {
     /*se ejecuta cuando la actividad esta a punto de ser visible para el usuario*/
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "Metodo OnStart()", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Metodo OnStart()", Toast.LENGTH_SHORT).show();
     }
 
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "Metodo OnResume()", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Metodo OnResume()", Toast.LENGTH_SHORT).show();
     }
 
     protected void onPause() {
         super.onPause();
-        Toast.makeText(this, "Metodo OnPause()", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Metodo OnPause()", Toast.LENGTH_SHORT).show();
     }
 
     protected void onRestart() {
         super.onRestart();
-        Toast.makeText(this, "Metodo OnRestart()", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "Metodo OnRestart()", Toast.LENGTH_SHORT).show();
     }
 
     protected void onDestroy() {
