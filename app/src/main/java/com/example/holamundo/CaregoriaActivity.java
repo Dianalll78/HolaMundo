@@ -6,6 +6,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -42,7 +43,8 @@ public class CaregoriaActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+
+   @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_caregoria);
         return NavigationUI.navigateUp(navController, appBarConfiguration)

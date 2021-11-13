@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">Hola Mundo</string> <!--nombre de la aplicacion-->
-    <string name="title_activity_caregoria">CaregoriaActivity</string>
+    <string name="app_name">Proyecto Grupo 08</string> <!--nombre de la aplicacion-->
+    <string name="title_activity_caregoria">Caregoria</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <!--<string name="first_fragment_label">First Fragment</string>-->
+    <string name="first_fragment_label">Categoria</string>
+    <!--<string name="second_fragment_label">Second Fragment</string>-->
+    <string name="second_fragment_label">Categoria</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="producto">Producto</string> <!--colocamos titulo a la actividad producto-->
+    <string name="categoria">Categoria</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

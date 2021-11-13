@@ -10,14 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
+            android:name=".CategoriaActivity"
+            android:label="@string/categoria"
+            android:exported="false" />
+        <activity
             android:name=".CaregoriaActivity"
-            android:exported="false"/>
-            android:label="@string/title_activity_caregoria"
-            android:theme="@style/Theme.HolaMundo.NoActionBar" />
+            android:exported="false" />
         <activity
             android:name=".ProductoActivity"
-            android:label="@string/producto"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/producto" />
         <!-- EN ESTA ULTIMA PARTE SE DEFINE LA ACTIVITY QUE SE LANZARA PRIMERO -->
         <activity
             android:name=".MainActivity"

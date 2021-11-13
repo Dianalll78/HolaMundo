@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="goToActivityProducto"
-        android:text="IR A PRODUCTO" />
+        android:text="IR A PRODUCTO"
+        android:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
