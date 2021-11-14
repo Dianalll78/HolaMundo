@@ -1,4 +1,4 @@
-package com.example.holamundo;
+package com.Diana.ProyectoGrupo08;
 
 import androidx.appcompat.app.AppCompatActivity;
 

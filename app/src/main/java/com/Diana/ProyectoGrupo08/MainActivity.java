@@ -1,9 +1,12 @@
-package com.example.holamundo;
+package com.Diana.ProyectoGrupo08;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -60,7 +63,30 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(menuItem);
     }
 
-    /*se ejecuta cuando la actividad esta a punto de ser visible para el usuario*/
+    /*metodo para cuadro de dialogo que pregunta si el usuario desea salir de la app*/
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {  /*si el codigo keyCode es igual al KeyEvente para ir atras*/
+            new AlertDialog.Builder(this, R.style.Theme_AppCompat_Dialog_Alert)  /*construccion del dialogo con el estilo*/
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Informacion")
+                    .setMessage("¿Desea cerrar la aplicacion?")    /*sentencias de creacion de titulo dialogo,informacion y mensaje*/
+                    .setNegativeButton("No", null)
+                    .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            MainActivity.this.finish();
+                        }
+                    }).show(); /*muestra*/
+            return true;
+
+        }
+
+        return super.onKeyDown(keyCode, event);
+
+    }
+
+
+        /*se ejecuta cuando la actividad esta a punto de ser visible para el usuario*/
     protected void onStart() {
         super.onStart();
 //        Toast.makeText(this, "Metodo OnStart()", Toast.LENGTH_SHORT).show();
@@ -85,5 +111,8 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Toast.makeText(this, "Metodo OnDestroy()", Toast.LENGTH_SHORT).show();
     }
+
+
+
 }
 
