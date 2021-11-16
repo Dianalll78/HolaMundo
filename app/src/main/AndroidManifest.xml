@@ -10,19 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
-            android:name="com.Diana.ProyectoGrupo08.CategoriaActivity"
-            android:label="@string/categoria"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.Diana.ProyectoGrupo08.CaregoriaActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.Diana.ProyectoGrupo08.ProductoActivity"
+            android:name=".CategoriaActivity"
             android:exported="false"
-            android:label="@string/producto" />
-        <!-- EN ESTA ULTIMA PARTE SE DEFINE LA ACTIVITY QUE SE LANZARA PRIMERO -->
+            android:label="@string/categoria" />
         <activity
-            android:name="com.Diana.ProyectoGrupo08.MainActivity"
+            android:name=".CaregoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductoActivity"
+            android:exported="false"
+            android:label="@string/producto" /> <!-- EN ESTA ULTIMA PARTE SE DEFINE LA ACTIVITY QUE SE LANZARA PRIMERO -->
+        <activity
+            android:name=".SplashScrenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
